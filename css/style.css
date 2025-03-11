@@ -104,6 +104,7 @@ ul {
 .label > .green-label {
     background-color: green;
     padding: 5px 10px;
+    font-weight: bold;
 }
 
 .card-content > .brand {
