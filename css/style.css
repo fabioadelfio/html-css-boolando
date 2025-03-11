@@ -75,6 +75,7 @@ ul {
 
 .card > .card-img {
     position: relative;
+    z-index: 1;
 }
 
 .card-img > .favorites {
@@ -84,6 +85,7 @@ ul {
     position: absolute;
     top: 10px;
     right: 0;
+    z-index: 3;
 }
 
 .card-img > .label {
@@ -94,17 +96,20 @@ ul {
     position: absolute;
     bottom: 45px;
     left: 0px;
+    z-index: 3;
 }
 
 .label > .discount {
     background-color: red;
     padding: 5px 10px;
+    z-index: 3;
 }
 
 .label > .green-label {
     background-color: green;
     padding: 5px 10px;
     font-weight: bold;
+    z-index: 3;
 }
 
 .card-content > .brand {
@@ -128,6 +133,37 @@ ul {
 .card-content > .price > .original-price {
     text-decoration: line-through;
 }
+
+.card > .card-img > .card-img-hover {
+    display: none;
+    z-index: 2;
+
+    position: absolute;
+    top: 0;
+
+}
+
+.card:hover > .card-img > .card-img-hover {
+    display: flex;
+}
+
+.favorites-hover {
+    display: none;
+
+    color: red;
+    background-color: white;
+    font-size: 35px;
+    padding: 5px 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+.favorites:hover > .favorites-hover {
+    display: flex;
+}
+
 
 /* FOOTER */
 
