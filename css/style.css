@@ -31,7 +31,6 @@ ul {
     margin-right: auto;
     padding-left: 0px;
     padding-right: 0px;
-    padding: 50px 0;
 }
 
 /* HEADER */
@@ -41,7 +40,8 @@ ul {
     color: white;
     font-size: 0.9rem;
     display: fixed;
-    top: 0;;
+    top: 0;
+    margin-bottom: 50px;
 }
 
 .container.top-header {
@@ -63,10 +63,10 @@ ul {
 /* MAIN */
 
 .container .row{
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding-bottom: 50px;
 }
 
 .container .row > .card {
@@ -129,3 +129,41 @@ ul {
     text-decoration: line-through;
 }
 
+/* FOOTER */
+
+.page-footer {
+    background-color: #1A1A1A;
+    color: white;
+}
+
+.container > .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    line-height: 30px;
+}
+
+.container > .footer-row > .info-company > .company-name {
+    font-weight: bold;
+}
+
+.container > .footer-row > .info-company ul{
+    font-size: 0.8rem;
+    display: flex;
+    gap: 10px;
+}
+
+.container > .footer-row > .social > .links ul {
+    display: flex;
+    gap: 10px;
+}
+
+.container > .footer-row > .social > .invitation {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.container > .footer-row > .social > .links {
+    font-size: 1.2rem;
+}
